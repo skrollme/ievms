@@ -154,7 +154,7 @@ check_ext_pack() {
         download "Oracle VM VirtualBox Extension Pack" "${url}" "${archive}" "${md5}"
 
         log "Installing Oracle VM VirtualBox Extension Pack from ${ievms_home}/${archive}"
-        VBoxManage extpack install "${archive}"
+        echo "y" | VBoxManage extpack install "${archive}"
     fi
 }
 
